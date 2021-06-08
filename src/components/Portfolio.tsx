@@ -188,6 +188,32 @@ const FrontCard = () => {
     )
 }
 
+const FrontCardLeft = () => {
+    return (
+        <CardContainer>
+            <Grid container spacing={5}>
+            <Grid item md={4}>
+                    <div className="imgcontainer">
+                        <img src={PortfolioPic4} />
+                    </div>
+                </Grid>
+                <Grid item md={8}>
+                    <CardContent>
+                        <h4>Front-End Developer</h4>
+                        <p>
+                        Less than 1-year front-end developer experience in internship and part-time 
+                        Developed web E-commerce using React.js, TypeScript with Visual Studio Code.
+                        </p>
+                        <a target="_blank" href="https://siriwanphat.github.io/landing-page-depoy/">
+                            go to Landingpage
+                    </a>
+                    </CardContent>
+                </Grid>
+            </Grid>
+        </CardContainer>
+    )
+}
+
 export const Portfolio = () => {
 
 
@@ -207,7 +233,7 @@ export const Portfolio = () => {
                     <FrontCard/>
                 </Hidden>
                 <Hidden mdUp>
-                    <FrontCard/>
+                    <FrontCardLeft/>
                 </Hidden>
             </PortfolioContainer >
         </Container>
